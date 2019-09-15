@@ -4,6 +4,7 @@ class MixOrMatch {
         this.totalTime = totalTime;
         this.timeRemaining = totalTime;
         this.timer = document.getElementById('time-remaining')
+        this.life = document.getElementById('life');
     }
 
     startGame() {
@@ -23,6 +24,7 @@ class MixOrMatch {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
+            this.life.style.width = `${this.timeRemaining}%`;
             if(this.timeRemaining === 0)
                 this.gameOver();
         }, 1000);

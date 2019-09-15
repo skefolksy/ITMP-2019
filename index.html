@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,18 @@
   <script src="js/main.js" async></script>
   <title>Be the 1!</title>
 </head>
+
 <body>
-  <h1 class="page-title">Be the 1!</h1>
+  <!-- <h1 class="page-title">Be the 1!</h1> -->
   <div class="overlay-text visible">
     Click to Start
   </div>
   <div id="game-over-text" class="overlay-text">
-    GAME OVER
+    Game Over
     <span class="overlay-text-small">Click to Restart</span>
   </div>
   <div id="victory-text" class="overlay-text">
-    VICTORY
+    Victory
     <span class="overlay-text-small">Click to Restart</span>
   </div>
 
@@ -27,264 +29,258 @@
       <div class="game-info">
         Time <span id="time-remaining">100</span>
       </div>
+      <div id="life"></div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
-      <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-00.png">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
-      </div>
-      <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-00.png">
+      <div class="card-bomb card-face">
+        <img class="card-value" src="Assets/img/item0.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
-      <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-01.png">
+      <div class="card-bomb card-face">
+        <img class="card-value" src="Assets/img/item0.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-01.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item1.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-02.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item1.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-02.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item2.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-03.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item2.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-03.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item3.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-04.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item3.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-04.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item4.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-05.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item4.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-05.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item5.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-06.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item5.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-06.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item6.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-07.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item6.svg">
       </div>
     </div>
     <div class="card">
       <div class="card-back card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_orange.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_orange.png">
-        <img class="back" src="Images/back.png">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
       </div>
       <div class="card-front card-face">
-        <img class="cob-web cob-web-top-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-top-right" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-left" src="Images/corner_blue.png">
-        <img class="cob-web cob-web-bottom-right" src="Images/corner_blue.png">
-        <img class="card-value" src="Images/Icon-07.png">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item7.svg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="helm helm-back helm-top-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-top-right" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-left" src="Assets/img/corner_back.svg">
+        <img class="helm helm-back helm-bottom-right" src="Assets/img/corner_back.svg">
+        <img class="back" src="Assets/img/back.svg">
+      </div>
+      <div class="card-front card-face">
+        <img class="helm helm-front helm-top-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-top-right" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-left" src="Assets/img/corner_front.svg">
+        <img class="helm helm-front helm-bottom-right" src="Assets/img/corner_front.svg">
+        <img class="card-value" src="Assets/img/item7.svg">
       </div>
     </div>
   </div>
 
 </body>
+
 </html>
