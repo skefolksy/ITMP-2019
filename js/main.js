@@ -25,7 +25,7 @@ class MixOrMatch {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
             this.life.style.width = `${this.timeRemaining}%`;
-            if(this.timeRemaining === 0)
+            if(this.timeRemaining <= 0)
                 this.gameOver();
         }, 1000);
     }
@@ -53,6 +53,7 @@ class MixOrMatch {
                     card.classList.remove('visible');
                     if (this.cardToCheck) {
                         this.cardToCheck.classList.remove('visible');
+                        this.cardToCheck = null;
                     }
                     this.busy = false;
                     this.timeRemaining -= 3;
