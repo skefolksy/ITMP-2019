@@ -47,7 +47,19 @@ class MixOrMatch {
         if(this.canFlipCard(card)) {
             card.classList.add('visible');
 
-            if(this.cardToCheck) {
+            if (this.isBomb(card)) {
+                this.busy = true;
+                setTimeout(() => {
+                    card.classList.remove('visible');
+                    if (this.cardToCheck) {
+                        this.cardToCheck.classList.remove('visible');
+                    }
+                    this.busy = false;
+                    this.timeRemaining -= 3;
+                }, 1000);
+            }
+
+            else if(this.cardToCheck) {
                 this.checkForCardMatch(card);
             } else {
                 this.cardToCheck = card;
@@ -67,7 +79,8 @@ class MixOrMatch {
         this.matchedCards.push(card2);
         card1.classList.add('matched');
         card2.classList.add('matched');
-        if(this.matchedCards.length === this.cardsArray.length)
+        this.timeRemaining++;
+        if(this.matchedCards.length === this.cardsArray.length-2)
             this.victory();
     }
     cardMismatch(card1, card2) {
@@ -76,6 +89,7 @@ class MixOrMatch {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
             this.busy = false;
+            this.timeRemaining--;
         }, 1000);
     }
     shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
@@ -90,6 +104,9 @@ class MixOrMatch {
     }
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    }
+    isBomb(card) {
+        return this.getCardType(card).includes('item0');
     }
 }
 
