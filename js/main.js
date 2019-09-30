@@ -24,7 +24,7 @@ class MixOrMatch {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            this.life.style.width = `${this.timeRemaining}%`;
+            this.life.style.height = `${this.timeRemaining}%`;
             if(this.timeRemaining <= 0)
                 this.gameOver();
         }, 1000);
